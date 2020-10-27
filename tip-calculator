@@ -1,0 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Object : MonoBehaviour
+{
+
+    public int bill = 40;
+    public float tip = 20.0f;
+    public int total;
+    public float tipAmount;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+        tipAmount = bill * (tip / 100);
+
+        float total = tipAmount + bill;
+
+        Debug.Log("your bill is $" + bill + " the tip is $" + tipAmount + "the total is $" + total);
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
